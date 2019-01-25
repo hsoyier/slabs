@@ -1,0 +1,15 @@
+.footer .footer-nav {
+  overflow: hidden;
+  padding: 5% 0 2% 0; }
+
+.footer .footer-navlist {
+  min-width: 340px;
+  float: right; }
+  .footer .footer-navlist .footer-nav__item {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5%; }
+    .footer .footer-navlist .footer-nav__item a {
+      color: #e5e5e5; }
+  .footer .footer-navlist .footer-nav__item:last-child {
+    margin-right: 0; }

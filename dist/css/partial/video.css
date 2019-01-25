@@ -1,0 +1,19 @@
+/*---------------------------------------------
+  video
+  ---------------------------------------------*/
+.video-block {
+  background: #1f0062;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .video-block {
+    margin-bottom: 10%;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; }
+  .video-block iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; } }

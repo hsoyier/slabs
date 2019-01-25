@@ -1,0 +1,90 @@
+@import '../common.scss';
+
+/*---------------------------------------------
+  main
+  ---------------------------------------------*/
+.main {
+  padding: 5% 0;
+  .main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .catch {
+      width: 55%;
+      font-size: 70px;
+      line-height: normal;
+      margin: 0;
+    }
+  }
+  .register-box {
+    padding-top: 2%;
+    input::placeholder {
+      color: $text_color_register;
+      line-height: normal;
+      font-size: 14px;
+      padding-left: 2%;
+    }
+    .email,
+    .password {
+      border: 1px solid #fff;
+      height: 56px;
+      border: 1px solid #828f92;
+      box-sizing: border-box;
+      border-radius: 8px;
+      margin-bottom: 4%;
+      background: #f1f1f000;
+      color: #fff;
+      padding-left: 5%;
+    }
+    .password {
+      margin-bottom: 0;
+    }
+    .email,
+    .password,
+    .button-register {
+      display: block;
+      width: 100%;
+    }
+    .checkbox,
+    .notes {
+      display: inline-block;
+    }
+    .notes {
+      line-height: normal;
+      font-size: 12px;
+      color: $text_color_register;
+    }
+    .button-register {
+      @include button-register();
+      height: 64px;
+      margin-top: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin-bottom: 10%;
+    .main-block {
+      display: block;
+      .catch {
+        width: 100%;
+        font-size: 2.5rem;
+        padding: 10% 0;
+      }
+    }
+    .register-box {
+      overflow: hidden;
+      .checkbox .notes {
+        float: left;
+      }
+      .checkbox {
+        width: 10%;
+      }
+      .notes {
+        width: 80%;
+        vertical-align: middle;
+      }
+    }
+  }
+}

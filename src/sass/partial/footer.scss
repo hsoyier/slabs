@@ -1,0 +1,48 @@
+@import '../common.scss';
+
+/*---------------------------------------------
+  footer
+  ---------------------------------------------*/
+.footer {
+  .footer-nav {
+    overflow: hidden;
+    padding: 5% 0 2% 0;
+  }
+  .footer-navlist {
+    min-width: 340px;
+    float: right;
+    .footer-nav__item {
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 5%;
+      a {
+        color: $text_color_sub;
+      }
+    }
+    .footer-nav__item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 8%;
+    .footer-nav {
+      overflow: auto;
+      text-align: center;
+      padding: 5% 0;
+    }
+    .footer-navlist {
+      float: none;
+      min-width: 100%;
+      .footer-nav__item {
+        display: block;
+        margin-bottom: 8%;
+      }
+      .footer-nav__item::last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

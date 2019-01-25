@@ -1,0 +1,84 @@
+@import '../common.scss';
+
+/*---------------------------------------------
+  manu mobile
+  ---------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .hamburger-nav {
+    display: block;
+    .nav-toggle-button {
+      cursor: pointer;
+      color: #fff;
+      position: relative;
+      z-index: 4;
+      background: $color_brand;
+      outline: none;
+      border: none;
+    }
+    .nav-toggle-button.close::before,
+    .nav-toggle-button.open::before {
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 1.8rem;
+    }
+    .nav-toggle-button.close::before {
+      content: '\f0c9';
+    }
+    .nav-toggle-button.open::before {
+      content: '\f00d';
+    }
+    .login {
+      background: $color_brand_register;
+      width: 50%;
+    }
+    .nav-list {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 25% 0;
+      background: $color_brand_hamburger;
+      text-align: center;
+    }
+    .nav-list__item a {
+      display: block;
+      padding: 0 0 10% 0;
+      text-decoration: none;
+      color: #fff;
+    }
+    .nav-list.open {
+      display: block;
+      z-index: 1;
+      animation: showAni 0.5s ease 0s 1 normal;
+    }
+    .nav-list.close {
+      display: block;
+      opacity: 0;
+      animation: hideAni 0.5s ease 0s 1 normal;
+    }
+  }
+
+  @keyframes showAni {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes hideAni {
+    0% {
+      opacity: 1;
+      z-index: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+}

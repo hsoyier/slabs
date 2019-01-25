@@ -1,0 +1,32 @@
+@import '../common.scss';
+
+/*---------------------------------------------
+  count
+  ---------------------------------------------*/
+.count-block {
+  padding: 0 1%;
+  display: flex;
+  justify-content: space-between;
+  .count-users,
+  .count-vids {
+    color: $color_brand_count;
+    font-family: $font_family_RobotoMono;
+    font-size: 40px;
+    margin: 4% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .count-block {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    .count-users,
+    .count-vids {
+      word-break: break-all;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+  }
+}

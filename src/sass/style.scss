@@ -1,0 +1,131 @@
+@import './common.scss';
+@import './partial/header.scss';
+@import './partial/menu.scss';
+@import './partial/main.scss';
+@import './partial/infos.scss';
+@import './partial/video.scss';
+@import './partial/press.scss';
+@import './partial/count.scss';
+@import './partial/footer.scss';
+
+body {
+  font-family: $font_family_Poppins;
+  background: $color_brand;
+  font-size: 16px;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold500 {
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  width: $content_width;
+  margin: 0 auto;
+}
+
+.bg {
+  min-width: 1280px;
+  background: url(../assets/bg-img.jpg);
+  background: linear-gradient(180deg, rgba(51, 10, 139, 0.6) 0%, #330a8b 65%),
+    url(../assets/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bar-message {
+  background: $color_brand_sub;
+  text-align: center;
+  color: $text_color_sub;
+  font-size: 14px;
+  padding: 1.5% 0;
+  line-height: normal;
+  min-width: 1280px;
+}
+
+.bar-register {
+  width: 100%;
+  background: $color_brand_sub;
+  padding: 1% 0;
+  text-align: center;
+  min-width: 1280px;
+  .button-register {
+    @include button-register();
+  }
+}
+
+.opacity-lighter:hover {
+  animation: opacity-lighter 0.3s ease-in-out 0s 1 normal forwards running;
+}
+
+@keyframes opacity-lighter {
+  to {
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .inner {
+    width: 90%;
+  }
+  .bg {
+    min-width: auto;
+    background: none;
+  }
+  .bar-message {
+    min-width: auto;
+    padding: 8% 10%;
+    line-height: 1.8rem;
+  }
+  .bar-register {
+    min-width: auto;
+    padding: 10% 0;
+    background: none;
+    .button-register {
+      @include button-register();
+      width: 60%;
+      height: 57px;
+    }
+  }
+}

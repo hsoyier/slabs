@@ -1,0 +1,23 @@
+$color_brand: #330a8b;
+$color_brand_sub: #4104c2;
+$color_brand_video: #1f0062;
+$color_brand_count: #270470;
+$color_brand_login: #330a8b;
+$color_brand_hamburger: rgba(35, 5, 97, 0.9);
+$color_brand_register: #dc2064;
+$content_width: 1280px;
+$font_family_Poppins: 'Poppins', sans-serif;
+$font_family_RobotoMono: 'Roboto Mono', monospace;
+$font_family_Roboto: 'Roboto', sans-serif;
+$text_color_sub: #e5e5e5;
+$text_color_register: #828f92;
+
+@mixin button-register($color: $color_brand_register) {
+  background: $color;
+  border-radius: 100px;
+  color: #fff;
+  padding: 1% 3%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

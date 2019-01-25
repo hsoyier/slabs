@@ -1,0 +1,25 @@
+/*---------------------------------------------
+  count
+  ---------------------------------------------*/
+.count-block {
+  padding: 0 1%;
+  display: flex;
+  justify-content: space-between; }
+  .count-block .count-users,
+  .count-block .count-vids {
+    color: #270470;
+    font-family: "Roboto Mono", monospace;
+    font-size: 40px;
+    margin: 4% 0 0 0; }
+
+@media screen and (max-width: 768px) {
+  .count-block {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    .count-block .count-users,
+    .count-block .count-vids {
+      word-break: break-all;
+      font-size: 1.6rem;
+      color: #fff; } }

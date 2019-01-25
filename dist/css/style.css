@@ -68,6 +68,8 @@
       background: #330a8b;
       outline: none;
       border: none; }
+    .hamburger-nav .nav-toggle-button.open {
+      background: rgba(35, 5, 97, 0.9); }
     .hamburger-nav .nav-toggle-button.close::before,
     .hamburger-nav .nav-toggle-button.open::before {
       font-family: 'Font Awesome 5 Free';

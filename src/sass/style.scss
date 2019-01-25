@@ -1,12 +1,12 @@
-@import './common.scss';
-@import './partial/header.scss';
-@import './partial/menu.scss';
-@import './partial/main.scss';
-@import './partial/infos.scss';
-@import './partial/video.scss';
-@import './partial/press.scss';
-@import './partial/count.scss';
-@import './partial/footer.scss';
+@import './_common.scss';
+@import './partial/_header.scss';
+@import './partial/_menu.scss';
+@import './partial/_main.scss';
+@import './partial/_infos.scss';
+@import './partial/_video.scss';
+@import './partial/_press.scss';
+@import './partial/_count.scss';
+@import './partial/_footer.scss';
 
 body {
   font-family: $font_family_Poppins;

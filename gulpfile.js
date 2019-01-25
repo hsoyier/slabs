@@ -4,7 +4,6 @@ var autoprefixer = require('gulp-autoprefixer')
 var plumber = require('gulp-plumber')
 var uglify = require('gulp-uglify')
 var browser = require('browser-sync')
-var rename = require('gulp-rename')
 
 gulp.task('server', function() {
   browser({
@@ -17,7 +16,6 @@ gulp.task('server', function() {
 gulp.task('html', function() {
   gulp
     .src(['src/**/*.html'])
-    // .pipe(rename({ extname: '.html' }))
     .pipe(gulp.dest('dist'))
     .pipe(browser.reload({ stream: true }))
 })

@@ -33,11 +33,6 @@ gulp.task('sass', function() {
 gulp.task('js', function() {
   gulp
     .src(['src/**/*.js', 'src/!js/min/**/*.js'])
-    // .pipe(
-    //   babel({
-    //     presets: ["@babel/env"]
-    //   })
-    // )
     .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest('dist'))
